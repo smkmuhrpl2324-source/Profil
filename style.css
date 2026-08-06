@@ -5,10 +5,10 @@ body {
 }
 
 header {
-  background-color: #1e293b; 
-  color: #ffffff; 
-  text-align: center; 
-  padding: 30px; 
+  background-color: #1e293b;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }
 
 nav {
@@ -20,34 +20,61 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 main {
-   max-width: 800px;
-   margin: 20px auto;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 article {
-    background-color: white; /* Latar putih */
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  background-color: white; /* Latar putih */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 article img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    main {
-        padding: 10px;
-    }
+  nav {
+    flex-direction: column;
+  }
+  main {
+    padding: 10px;
+  }
 }
- footer {
-    text-align: center;
- }
+footer {
+  text-align: center;
+}
+
+/* ATURAN MODE GELAP */
+body.dark-mode {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+/* Mengubah warna kartu artikel agar tidak tetap putih */
+body.dark-mode article {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+/* Mengubah warna seluruh teks di dalam artikel */
+body.dark-mode article h2,
+body.dark-mode article h3,
+body.dark-mode article p,
+body.dark-mode article li {
+    color: #f8fafc !important;
+}
+
+/* Mengubah warna link navigasi agar terang */
+body.dark-mode nav a,
+body.dark-mode a {
+    color: #38bdf8 !important;
+}
+

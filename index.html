@@ -10,6 +10,9 @@
     <header>
       <h1>Merina Kusumawati</h1>
       <p>Guru Mapel Produktif RPL</p>
+
+      <button onclick="toggleDarkMode()" style="cursor: pointer; padding: 6px 12px">Ubah Mode Tampilan</button>
+
     </header>
     <nav>
       <a href="tentang">Tentang Saya</a>
@@ -20,7 +23,25 @@
         <h2>Tentang Saya</h2>
         <p>Saya seorang guru yang mengajarkan mata pelajaran produktif kejuruan Rekayasa Perangkat Lunak (RPL)</p>
         <p><img src="./WhatsApp Image 2026-07-30 at 08.04.49.jpeg" alt="" width="200px" /></p>
+
+        <!-- Fitur Interaktif -->
+        <h2>Fitur Interaktif</h2>
+
+        <!-- Tombol Sapaan -->
+        <button onclick="sapaPengunjung()">Sapa Saya!</button>
+
+        <hr style="margin: 20px 0" />
+
+        <!-- Cek Kategori Usia -->
+        <h3>Cek Kategori Usia</h3>
+        <p>Masukkan Umur Anda:</p>
+        <input type="number" id="inputUsia" placeholder="Contoh: 17" />
+        <button onclick="cekUsia()">Cek Status</button>
+
+        <!-- Tempat menampilkan hasil -->
+        <p id="hasilCek" style="font-weight: bold; color: #1e293b"></p>
       </article>
+
       <article id="#hobi">
         <h2>Hobi Saya</h2>
         <ul>
@@ -33,5 +54,7 @@
     <footer>
       <p>Dibuat oleh Merina Kusumawati - 2026</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
